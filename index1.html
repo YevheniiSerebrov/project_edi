@@ -1,0 +1,54 @@
+<html lang="en">
+	<!-- INCLUDING JQUERY-->
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+	<title>group project</title>
+	<link rel="stylesheet", href="style.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    
+</head>
+
+<body>
+	
+    <h2 id="name_of_project">Database of Products</h2>
+    <h3 id="title_authors">Authors:</h3>
+    <div id="authors">
+        <p id="aut1" >Mateusz Michno</p>
+        <p id="aut2" >Yevhenii Serebrov</p>
+        <p id="aut3">Yaroslav Melnychuk</p>
+
+    </div>	
+    <h2 id="char1">Prices of different products</h2>
+<!-- creating charts of prices and warranty  -->
+    <canvas id="myChart"></canvas>
+    <h2 id="char2">Warranty depending on country</h2>
+    <canvas id="myChart2"></canvas>
+
+    <script src="index.js"></script>
+		<!-- TABLE CONSTRUCTION-->
+        
+		<table id = "table">
+            
+			<!-- HEADING FORMATION -->
+            <thead>
+                <tr>
+                    <td>id</td>
+                    <td>name</td>
+                    <td>price</td>
+                    <td>color</td>
+                    <td>brand name</td>
+                    <td>stock</td>
+                    <td>description</td>
+                    <td>warranty</td>
+                    <td>country</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+			
+</body>
+</html>

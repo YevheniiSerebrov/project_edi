@@ -1,0 +1,110 @@
+
+#name_of_project {
+    font-size:  36px;
+    font-family: fantasy;
+    letter-spacing: 8px;
+    color:#242323;
+    text-align: center;
+    background-color: #f1b100;
+    height: 80px;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+#title_authors {
+    font-size:  28px;
+    font-family: fantasy;
+    letter-spacing: 8px;
+    color:rgb(46, 46, 45);
+    text-align: center;
+    text-transform: uppercase;
+}
+#authors {
+    display:flex;
+
+    margin-top: 20px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+#aut1, #aut2, #aut3 {
+    margin: 2px;
+    font-family: fantasy;
+    height: 80px;
+    padding-top: 25px;
+    font-size: 28px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    background-color: #f5de7a;
+    color: #262427;
+    transition: all 1.5s ease;
+    border: 0;
+    letter-spacing: 8px;
+    text-align: center;
+    
+    
+    }
+
+#aut1:hover,#aut2:hover, #aut3:hover {
+    color: #262427;
+    background-color: #df7a07;
+    outline: none;
+}
+
+
+#char1, #char2 {
+    font-size: 18px;
+    text-align: center;
+}
+canvas {
+    margin-left: 70px;
+    max-width: 90%;
+    max-height: 900px;
+}
+table {
+    margin-top: 20px;
+    margin-left: 7%;
+    margin-right: 7%;
+    color: rgb(57, 56, 58);
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+thead {
+    width: 100%;
+    background-color: #ffbf36;
+    font-size: 20px;
+}
+tbody {
+    width: 100%;
+}
+th {
+    padding: 12px;
+    background-color: #ffbf36;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    border: 5px solid rgb(253, 243, 211);
+    font-weight: bold;
+    
+}
+td {
+    padding: 6px ;
+    border: 5px solid rgb(253, 243, 211);
+    font-weight: bold;
+}
+ tbody tr:nth-child(odd) {
+    background-color: rgb(253, 243, 211);
+}
+ tbody tr:nth-child(even) {
+    background-color: rgba(255, 227, 141, 0.912);
+}
+ tbody tr:hover {
+    color: rgb(226, 228, 222);
+    background-color: rgba(32, 32, 31, 0.609);
+    transition: all 0.5s ease
+}
