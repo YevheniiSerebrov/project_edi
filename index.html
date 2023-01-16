@@ -23,15 +23,37 @@
         <p id="aut3">Yaroslav Melnychuk</p>
 
     </div>	
+    <div id="btn2">
+        <button type="button" id="btn_csv" onclick="hidediv('main_body1');">1-100</button>
+        <button type="button" id="btn_json" onclick="hidediv('main_body2');" >101-200</button>
+        <button type="button" id="btn_xml" onclick="hidediv('main_body3');">201-300</button>
+    </div>
+    <script>
+        function hidediv(div) {
+            var x = document.getElementById(div);
+            
+            if(x.style.display != 'none'){
+                x.style.display = 'none';
+                
+            } else {
+                x.style.display ='block';
+            }         
+        }
+    </script>
+
+<div id="main_body1">
     <h2 id="char1">Prices of different products</h2>
 <!-- creating charts of prices and warranty  -->
+
     <canvas id="myChart"></canvas>
+
     <h2 id="char2">Warranty depending on country</h2>
+
     <canvas id="myChart2"></canvas>
 
     <script src="index.js"></script>
 		<!-- TABLE CONSTRUCTION-->
-		<table id="table" cellspacing="0" data-toolbar="#toolbar">
+		<table id="table" cellspacing="0">
 			<!-- HEADING FORMATION -->
             <thead>
                 <tr>
@@ -49,6 +71,67 @@
             <tbody>
             </tbody>
         </table>
+</div>
+
+<div id="main_body2">
+    <h2 id="char1">Prices of different products</h2>
+<!-- creating charts of prices and warranty  -->
+    <canvas id="myChart_2"></canvas>
+    <h2 id="char2">Warranty depending on country</h2>
+    <canvas id="myChart2_2"></canvas>
+
+    <script src="index.js"></script>
+		<!-- TABLE CONSTRUCTION-->
+		<table id="table" cellspacing="0">
+			<!-- HEADING FORMATION -->
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>price</th>
+                    <th>color</th>
+                    <th>brand name</th>
+                    <th>stock</th>
+                    <th>description</th>
+                    <th>warranty</th>
+                    <th>country</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+</div>
+
+<div id="main_body3">
+    <h2 id="char1">Prices of different products</h2>
+<!-- creating charts of prices and warranty  -->
+    <canvas id="myChart_3"></canvas>
+    <h2 id="char2">Warranty depending on country</h2>
+    <canvas id="myChart2_3"></canvas>
+
+    <script src="index.js"></script>
+		<!-- TABLE CONSTRUCTION-->
+		<table id="table" cellspacing="0">
+			<!-- HEADING FORMATION -->
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>price</th>
+                    <th>color</th>
+                    <th>brand name</th>
+                    <th>stock</th>
+                    <th>description</th>
+                    <th>warranty</th>
+                    <th>country</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+</div>
+
+
         <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/bootstrap-table@1.21.2/dist/bootstrap-table.min.js"></script>			

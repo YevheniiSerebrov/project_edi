@@ -51,8 +51,35 @@
     background-color: #df7a07;
     outline: none;
 }
+#btn2 {
+    display:flex;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#btn_csv, #btn_json, #btn_xml {
+    /* width: 350px; */
+    height: 80px;
+    background-color: #000000f1;
+    transition: all 1s ease; 
+    border-radius: 20px;
+    font-size: 26px;
+    font-family:fantasy;
+    letter-spacing: 8px;
+    color: rgb(255, 192, 45);
+    margin: 80px;
+}
+#btn_csv:hover, #btn_json:hover, #btn_xml:hover, 
+#btn_csv:focus, #btn_json:focus, #btn_xml:focus {
+    color: rgb(255, 255, 251);
+    background-color: #0000005d;
 
-
+    outline: none;
+    border: 0;
+}
 #char1, #char2 {
     font-size: 18px;
     text-align: center;

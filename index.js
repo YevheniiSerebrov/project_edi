@@ -1,21 +1,22 @@
-// macaroo api link to data
-$.getJSON("https://my.api.mockaroo.com/products.json?key=8ab1f590", function(data) {
-    
-        for(var i = 0; i<data.length; i++){
-            $('tbody').append(
-                '<tr><td>' + data[i].id +
-                '</td><td>'+data[i].name +
-                '</td><td>'+data[i].price +
-                '</td><td>'+data[i].color +
-                '</td><td>'+data[i].brand_name +
-                '</td><td>'+data[i].stock +
-                '</td><td>'+data[i].description +
-                '</td><td>'+data[i].years_of_warranty +
-                '</td><td>'+data[i].country + '</td></tr>');
-                }
-        }
-        );
-$.getJSON("https://my.api.mockaroo.com/products.json?key=8ab1f590", function(data) {
+// github api link to data
+
+$.getJSON("https://YevheniiSerebrov.github.io/project_edi/data1.json", function(data) {
+
+    for(var i = 0; i<data.length; i++){
+        $('tbody').append(
+            '<tr><td>' + data[i].id +
+            '</td><td>'+data[i].name +
+            '</td><td>'+data[i].price +
+            '</td><td>'+data[i].color +
+            '</td><td>'+data[i].brand_name +
+            '</td><td>'+data[i].stock +
+            '</td><td>'+data[i].description +
+            '</td><td>'+data[i].years_of_warranty +
+            '</td><td>'+data[i].country + '</td></tr>');
+            }
+    }
+    );
+$.getJSON("https://YevheniiSerebrov.github.io/project_edi/data1.json", function(data) {
     var labels = data.map(function(e) {
         return e.name;
     });
@@ -41,7 +42,7 @@ $.getJSON("https://my.api.mockaroo.com/products.json?key=8ab1f590", function(dat
     });
     });
 
-$.getJSON("https://my.api.mockaroo.com/products.json?key=8ab1f590", function(data) {
+$.getJSON("https://YevheniiSerebrov.github.io/project_edi/data1.json", function(data) {
     var labels = data.map(function(e) {
         return e.country;
     });
@@ -58,7 +59,50 @@ $.getJSON("https://my.api.mockaroo.com/products.json?key=8ab1f590", function(dat
             datasets: [{
                 backgroundColor: 'yellow',
                 borderColor: 'rgb(0, 150, 215)',
-                data: data
+                data: data,
+                label: 'Graph Line'
+            }]
+        },
+        options: {
+            responsive: 'true',
+        }
+    });
+    });
+// =====================================2===========================================
+$.getJSON("https://YevheniiSerebrov.github.io/project_edi/data2.json", function(data) {
+
+    for(var i = 0; i<data.length; i++){
+        $('tbody').append(
+            '<tr><td>' + data[i].id +
+            '</td><td>'+data[i].name +
+            '</td><td>'+data[i].price +
+            '</td><td>'+data[i].color +
+            '</td><td>'+data[i].brand_name +
+            '</td><td>'+data[i].stock +
+            '</td><td>'+data[i].description +
+            '</td><td>'+data[i].years_of_warranty +
+            '</td><td>'+data[i].country + '</td></tr>');
+            }
+    }
+    );
+$.getJSON("https://YevheniiSerebrov.github.io/project_edi/data2.json", function(data) {
+    var labels = data.map(function(e) {
+        return e.name;
+    });
+    var data = data.map(function(e) {
+        return e.price;
+    });
+    
+    var ctx = document.getElementById('myChart_2').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                backgroundColor: '#f5de7a',
+                borderColor: 'grey',
+                data: data,
+                label: 'Graph Line'
             }]
         },
         options: {
@@ -67,3 +111,98 @@ $.getJSON("https://my.api.mockaroo.com/products.json?key=8ab1f590", function(dat
     });
     });
 
+$.getJSON("https://YevheniiSerebrov.github.io/project_edi/data2.json", function(data) {
+    var labels = data.map(function(e) {
+        return e.country;
+    });
+    var data = data.map(function(e) {
+        return e.years_of_warranty;
+    });
+
+
+    var ctx = document.getElementById('myChart2_2').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                backgroundColor: 'red',
+                borderColor: 'rgb(0, 150, 215)',
+                data: data,
+                label: 'Graph Line'
+            }]
+        },
+        options: {
+            responsive: 'true',
+        }
+    });
+    });
+// ========================================3========================================
+$.getJSON("https://YevheniiSerebrov.github.io/project_edi/data3.json", function(data) {
+
+    for(var i = 0; i<data.length; i++){
+        $('tbody').append(
+            '<tr><td>' + data[i].id +
+            '</td><td>'+data[i].name +
+            '</td><td>'+data[i].price +
+            '</td><td>'+data[i].color +
+            '</td><td>'+data[i].brand_name +
+            '</td><td>'+data[i].stock +
+            '</td><td>'+data[i].description +
+            '</td><td>'+data[i].years_of_warranty +
+            '</td><td>'+data[i].country + '</td></tr>');
+            }
+    }
+    );
+$.getJSON("https://YevheniiSerebrov.github.io/project_edi/data3.json", function(data) {
+    var labels = data.map(function(e) {
+        return e.name;
+    });
+    var data = data.map(function(e) {
+        return e.price;
+    });
+    
+    var ctx = document.getElementById('myChart_3').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                backgroundColor: '#f5de7a',
+                borderColor: 'grey',
+                data: data,
+                label: 'Graph Line'
+            }]
+        },
+        options: {
+            responsive: 'true',
+        }
+    });
+    });
+
+$.getJSON("https://YevheniiSerebrov.github.io/project_edi/data3.json", function(data) {
+    var labels = data.map(function(e) {
+        return e.country;
+    });
+    var data = data.map(function(e) {
+        return e.years_of_warranty;
+    });
+
+
+    var ctx = document.getElementById('myChart2_3').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                backgroundColor: 'green',
+                borderColor: 'rgb(0, 150, 215)',
+                data: data,
+                label: 'Graph Line'
+            }]
+        },
+        options: {
+            responsive: 'true',
+        }
+    });
+    });
