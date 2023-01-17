@@ -136,3 +136,14 @@ td {
     background-color: rgba(32, 32, 31, 0.609);
     transition: all 0.5s ease
 }
+#main_body1, #main_body2, #main_body3 {
+    display: none;
+}
+/* ------------------FOOTER------------------------------ */
+footer {
+    height: 350px;
+    width: 100%;
+    background-color: #00000000;
+    margin-bottom: 0;
+    position:absolute;
+}

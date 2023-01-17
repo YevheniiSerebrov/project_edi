@@ -3,7 +3,7 @@
 $.getJSON("https://YevheniiSerebrov.github.io/project_edi/data1.json", function(data) {
 
     for(var i = 0; i<data.length; i++){
-        $('tbody').append(
+        $('#tbody1').append(
             '<tr><td>' + data[i].id +
             '</td><td>'+data[i].name +
             '</td><td>'+data[i].price +
@@ -72,7 +72,7 @@ $.getJSON("https://YevheniiSerebrov.github.io/project_edi/data1.json", function(
 $.getJSON("https://YevheniiSerebrov.github.io/project_edi/data2.json", function(data) {
 
     for(var i = 0; i<data.length; i++){
-        $('tbody').append(
+        $('#tbody2').append(
             '<tr><td>' + data[i].id +
             '</td><td>'+data[i].name +
             '</td><td>'+data[i].price +
@@ -99,7 +99,7 @@ $.getJSON("https://YevheniiSerebrov.github.io/project_edi/data2.json", function(
         data: {
             labels: labels,
             datasets: [{
-                backgroundColor: '#f5de7a',
+                backgroundColor: '#f5d97a',
                 borderColor: 'grey',
                 data: data,
                 label: 'Graph Line'
@@ -141,7 +141,7 @@ $.getJSON("https://YevheniiSerebrov.github.io/project_edi/data2.json", function(
 $.getJSON("https://YevheniiSerebrov.github.io/project_edi/data3.json", function(data) {
 
     for(var i = 0; i<data.length; i++){
-        $('tbody').append(
+        $('#tbody3').append(
             '<tr><td>' + data[i].id +
             '</td><td>'+data[i].name +
             '</td><td>'+data[i].price +
