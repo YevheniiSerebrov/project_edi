@@ -33,7 +33,7 @@ $.getJSON("https://YevheniiSerebrov.github.io/project_edi/data1.json", function(
                 backgroundColor: '#f5de7a',
                 borderColor: 'grey',
                 data: data,
-                label: 'Graph Line'
+                label: '1-100'
             }]
         },
         options: {
@@ -60,7 +60,7 @@ $.getJSON("https://YevheniiSerebrov.github.io/project_edi/data1.json", function(
                 backgroundColor: 'yellow',
                 borderColor: 'rgb(0, 150, 215)',
                 data: data,
-                label: 'Graph Line'
+                label: '1-100'
             }]
         },
         options: {
@@ -102,7 +102,7 @@ $.getJSON("https://YevheniiSerebrov.github.io/project_edi/data2.json", function(
                 backgroundColor: '#f5d97a',
                 borderColor: 'grey',
                 data: data,
-                label: 'Graph Line'
+                label: '101-200'
             }]
         },
         options: {
@@ -129,7 +129,7 @@ $.getJSON("https://YevheniiSerebrov.github.io/project_edi/data2.json", function(
                 backgroundColor: 'red',
                 borderColor: 'rgb(0, 150, 215)',
                 data: data,
-                label: 'Graph Line'
+                label: '101-200'
             }]
         },
         options: {
@@ -171,7 +171,7 @@ $.getJSON("https://YevheniiSerebrov.github.io/project_edi/data3.json", function(
                 backgroundColor: '#f5de7a',
                 borderColor: 'grey',
                 data: data,
-                label: 'Graph Line'
+                label: '201-300'
             }]
         },
         options: {
@@ -198,7 +198,7 @@ $.getJSON("https://YevheniiSerebrov.github.io/project_edi/data3.json", function(
                 backgroundColor: 'green',
                 borderColor: 'rgb(0, 150, 215)',
                 data: data,
-                label: 'Graph Line'
+                label: '201-300'
             }]
         },
         options: {

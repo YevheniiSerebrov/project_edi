@@ -16,7 +16,10 @@
 <body>
     
     <h2 id="name_of_project">Database of Products</h2>
-    <h3 id="title_authors">Authors:</h3>
+    <div id="title_authors">
+        <h2>Authors:</h2>
+    </div>
+    
     <div id="authors">
         <p id="aut1" >Mateusz Michno</p>
         <p id="aut2" >Yevhenii Serebrov</p>
@@ -24,9 +27,9 @@
 
     </div>	
     <div id="btn2">
-        <button type="button" id="btn_csv" onclick="hidediv('main_body1');">1-100</button>
-        <button type="button" id="btn_json" onclick="hidediv('main_body2');" >101-200</button>
-        <button type="button" id="btn_xml" onclick="hidediv('main_body3');">201-300</button>
+        <button type="button" id="btn_csv" onclick="javascript:hide1();">1-100</button>
+        <button type="button" id="btn_json" onclick="javascript:hide2();" >101-200</button>
+        <button type="button" id="btn_xml" onclick="javascript:hide3();">201-300</button>
     </div>
 
     <script src="index.js"></script>
@@ -117,8 +120,32 @@
 <footer>
     
 </footer>
+<script>
+function hide1()
+{
+  toggleId("main_body1"); 
+}
 
-<script>    
+function hide2()
+{
+  toggleId("main_body2");
+}
+
+function hide3()
+{
+  toggleId("main_body3");
+}
+
+function toggleId(id)
+{
+  var div = document.getElementById(id);
+  if(div.style.display == "none"){
+    div.style.display = "block";}
+  else {
+    div.style.display = "none";}
+}
+</script>
+<!-- <script>    
     function hidediv(div) {
         var x = document.getElementById(div);
         
@@ -130,7 +157,7 @@
             x.style.display ='block';
         }         
     }
-</script>
+</script> -->
         <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/bootstrap-table@1.21.2/dist/bootstrap-table.min.js"></script>			

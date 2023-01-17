@@ -1,4 +1,3 @@
-
 #name_of_project {
     font-size:  36px;
     font-family: fantasy;
@@ -6,38 +5,46 @@
     color:#242323;
     text-align: center;
     background-color: #f1b100;
-    height: 80px;
+    height: 15%;
     padding-top: 30px;
     text-transform: uppercase;
+    margin: 1px;
+    transition: all 1.5s ease;
 }
 #title_authors {
-    font-size:  28px;
+    font-size:  36px;
     font-family: fantasy;
     letter-spacing: 8px;
-    color:rgb(46, 46, 45);
+    color:#242323;
     text-align: center;
+    background-color: #d3cbbc;
+    height: 15%;
+    padding-top: 30px;
+    vertical-align: middle;
     text-transform: uppercase;
+    transition: all 1.5s ease;
 }
 #authors {
+    height: 15%;
     display:flex;
-
-    margin-top: 20px;
     margin-bottom: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
 }
 
 
 #aut1, #aut2, #aut3 {
-    margin: 2px;
+    margin: 1px;
+    font-size:  36px;
     font-family: fantasy;
-    height: 80px;
-    padding-top: 25px;
+    letter-spacing: 8px;
+    color:#242323;
+    padding-top: 30px;
     font-size: 28px;
     line-height: 1.33;
     text-transform: uppercase;
     background-color: #f5de7a;
-    color: #262427;
     transition: all 1.5s ease;
     border: 0;
     letter-spacing: 8px;
@@ -46,23 +53,25 @@
     
     }
 
-#aut1:hover,#aut2:hover, #aut3:hover {
+#aut1:hover,#aut2:hover, #aut3:hover, #title_authors:hover, #name_of_project:hover {
     color: #262427;
     background-color: #df7a07;
     outline: none;
 }
 #btn2 {
     display:flex;
-    margin-left: 110px;
-    margin-right: 110px;
+    /* margin-left: 110px;
+    margin-right: 110px; */
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 7%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 #btn_csv, #btn_json, #btn_xml {
     /* width: 350px; */
-    height: 80px;
+    height: 75%;
+    width: 80%;
+    
     background-color: #000000f1;
     transition: all 1s ease; 
     border-radius: 20px;
@@ -70,7 +79,9 @@
     font-family:fantasy;
     letter-spacing: 8px;
     color: rgb(255, 192, 45);
-    margin: 80px;
+    margin-top: 80px;
+    margin-left:10%;
+    
 }
 #btn_csv:hover, #btn_json:hover, #btn_xml:hover, 
 #btn_csv:focus, #btn_json:focus, #btn_xml:focus {
@@ -136,14 +147,15 @@ td {
     background-color: rgba(32, 32, 31, 0.609);
     transition: all 0.5s ease
 }
-#main_body1, #main_body2, #main_body3 {
+#main_body2, #main_body3, #main_body1 {
     display: none;
 }
 /* ------------------FOOTER------------------------------ */
 footer {
-    height: 350px;
+    margin-top: 20%;
+    height: 150px;
     width: 100%;
-    background-color: #00000000;
+    background-color: #6c6c6c51;
     margin-bottom: 0;
     position:absolute;
 }
